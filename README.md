@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/24510629/127751081-7f2f8fb8-1e8f-4376-
 This is what I've tried to do so far:
 1. I went into the storyboard and moved the position of the scrollView. Then in the code in the ViewController file inside the positionListItems function and initially it says to have the following to position the items:
 
-`   func positionListItems() {
+`func positionListItems() {
     let listHeight = listView.frame.height
     let itemHeight: CGFloat = listHeight * 1.33
     let aspectRatio = UIScreen.main.bounds.height / UIScreen.main.bounds.width
@@ -29,8 +29,7 @@ This is what I've tried to do so far:
     listView.contentSize = CGSize(
       width: CGFloat(herbs.count) * (itemWidth + horizontalPadding) + horizontalPadding,
       height:  0)
-  }
-`
+}`
 
 
 
